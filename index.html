@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="bg-blue-500 h-screen">
+      <div class="max-w-6xl container mx-auto lg:px-0 px-5 py-6">
+        <nav class="border-gray-200 px-2 sm:px-4 py-2.5 rounded">
+          <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <a href="#" class="flex">
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white tracking-widest">SulBot</span>
+            </a>
+            <div class="flex md:order-2">
+              <button type="button" class="bg-white text-blue-700 hover:scale-[1] hover:shadow-primary duration-300 font-medium ease-out rounded-full hidden md:block md:text-sm text-xs px-5 py-2.5 text-center mr-3 md:mr-0">
+                Get started
+              </button>
+              <button
+                data-collapse-toggle="mobile-menu-4"
+                type="button"
+                class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-blue-700 dark:focus:ring-blue-600"
+                aria-controls="mobile-menu-4"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                </svg>
+                <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-4">
+              <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                <li class="group">
+                  <a href="#" class="text-white md:text-md text-opacity-80 font-semibold tracking-wide hover:text-white">Home</a>
+                  <div class="h-0.5 bg-white scale-x-0 group-hover:scale-100 transition-transform origin-left rounded-full duration-300 ease-out"></div>
+                </li>
+                <li class="group">
+                  <a href="#" class="text-white md:text-md text-opacity-80 font-semibold tracking-wide hover:text-white">About</a>
+                  <div class="h-0.5 bg-white scale-x-0 group-hover:scale-100 transition-transform origin-left rounded-full duration-300 ease-out"></div>
+                </li>
+                <li class="group">
+                  <a href="#" class="text-white md:text-md text-opacity-80 font-semibold tracking-wide hover:text-white">Benefit</a>
+                  <div class="h-0.5 bg-white scale-x-0 group-hover:scale-100 transition-transform origin-left rounded-full duration-300 ease-out"></div>
+                </li>
+                <li class="group">
+                  <a href="#" class="text-white md:text-md text-opacity-80 font-semibold tracking-wide hover:text-white">Product</a>
+                  <div class="h-0.5 bg-white scale-x-0 group-hover:scale-100 transition-transform origin-left rounded-full duration-300 ease-out"></div>
+                </li>
+                <li class="group">
+                  <a href="#" class="text-white md:text-md text-opacity-80 font-semibold tracking-wide hover:text-white">Team</a>
+                  <div class="h-0.5 bg-white scale-x-0 group-hover:scale-100 transition-transform origin-left rounded-full duration-300 ease-out"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Hero -->
+
+        <div class="flex flex-wrap-reverse gap-y-24 justify-between py-12 md:py-32 md:pl-6 max-w-screen-xl">
+          <div class="relative z-10 md:w-6/12 text-center md:text-left md:pt-9">
+            <h1 class="lg:text-5xl md:text-3xl text-2xl font-bold text-white md:leading-extra-loose md:w-9/12">Meet Our AI Chatbot Solution</h1>
+            <p class="md:text-md leading-loose text-xs text-white mt-6 md:w-6/12">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut at impedit porro, perferendis quam delectus.</p>
+            <div class="pt-5 md:text-4xl text-2xl text-white font-semibold md:ml-3">
+              <span class="md:ml-3">12</span>
+              <span class="ml-3">:</span>
+              <span class="ml-3">15</span>
+              <span class="ml-3">:</span>
+              <span class="ml-3">36</span>
+              <span class="ml-3">:</span>
+              <span class="ml-3">48</span>
+            </div>
+            <div class="lg:pt-12 pt-9">
+              <button
+                type="button"
+                class="bg-transparent text-white hover:scale-110 border hover:bg-green-400 hover:shadow-primary duration-500 font-medium ease-out rounded-full md:block md:text-sm text-xs px-5 py-2.5 text-center mr-3 md:mr-0"
+              >
+                Read More !
+              </button>
+            </div>
+          </div>
+
+          <div class="w-6/12 mx-auto">
+            <div class="md:h-400 md:w-400 -mt-14">
+              <img src="./phone.png" alt="Phone" class="md:h-[558px] md:w-[558px] h-[200px] w-[250px] relative top-9 object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD -->
+
+    <div class="bg-sky-100">
+      <svg xmlns="http://www.w3.org/2000/svg" class="invisible md:visible" viewBox="0 0 1440 320"><path fill="#3B82F6" fill-opacity="1" d="M0,224L1440,32L1440,0L0,0Z"></path></svg>
+
+      <section class="max-w-6xl container mx-auto py-5 lg:px-0 px-5">
+        <!-- <div class="flex flex-wrap -m-4">
+        <div class="p-4 w-1/2 lg:w-1/3">
+          <div class="bg-white drop-shadow-xl h-full boreder-2 border-gray-200 border-opacity-60 rounded-lg">
+            <img src="./phone.png" alt="test" />
+          </div>
+        </div>
+        <div class="p-4 w-1/2 lg:w-1/3">
+          <div class="bg-white drop-shadow-xl h-full boreder-2 border-gray-200 border-opacity-60 rounded-lg">
+            <img src="./phone.png" alt="test" />
+          </div>
+        </div>
+        <div class="p-4 w-1/2 lg:w-1/3">
+          <div class="bg-white drop-shadow-xl h-full boreder-2 border-gray-200 border-opacity-60 rounded-lg">
+            <img src="./phone.png" alt="test" />
+          </div>
+        </div>
+      </div> -->
+        <div class="md:-mt-[300px]">
+          <div class="grid z-10 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
+            <div class="bg-white shadow-lg rounded-lg p-9">
+              <div class="flex flex-col justify-center items-center">
+                <div class="flex">
+                  <img src="./icon-about-1.png" alt="icon-about-1" />
+                </div>
+                <div class="flex">
+                  <h2 class="text-blue text-md mt-4 font-medium">Machine Learning Algorithm</h2>
+                </div>
+                <div class="flex">
+                  <h2 class="text-blue-900 text-center text-xs mt-4 leading-loose">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero fugiat molestiae,Vero fugiat molestiaeVero fugiat molestiae</h2>
+                </div>
+                <div class="flex mt-4 hover:scale-110 duration-300 ease-out p-2 rounded-xl">
+                  <a href="#">Show More !</a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-9">
+              <div class="flex flex-col justify-center items-center">
+                <div class="flex">
+                  <img src="./icon-about-1.png" alt="icon-about-1" />
+                </div>
+                <div class="flex">
+                  <h2 class="text-blue text-md mt-4 font-medium">Machine Learning Algorithm</h2>
+                </div>
+                <div class="flex">
+                  <h2 class="text-blue-900 text-center text-xs mt-4 leading-loose">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero fugiat molestiae,Vero fugiat molestiaeVero fugiat molestiae</h2>
+                </div>
+                <div class="flex mt-4 hover:scale-110 duration-300 ease-out p-2 rounded-xl">
+                  <a href="#">Show More !</a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-9">
+              <div class="flex flex-col justify-center items-center">
+                <div class="flex">
+                  <img src="./icon-about-1.png" alt="icon-about-1" />
+                </div>
+                <div class="flex">
+                  <h2 class="text-blue text-md mt-4 font-medium">Machine Learning Algorithm</h2>
+                </div>
+                <div class="flex">
+                  <h2 class="text-blue-900 text-center text-xs mt-4 leading-loose">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero fugiat molestiae,Vero fugiat molestiaeVero fugiat molestiae</h2>
+                </div>
+                <div class="flex mt-4 hover:scale-110 duration-300 ease-out p-2 rounded-xl">
+                  <a href="#">Show More !</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Invest? -->
+      <section class="max-w-6xl container mx-auto lg:px-0 px-5 md:py-32 py-12">
+        <div class="grid md:grid-cols-2 grid-cols-1 gap-5">
+          <div>
+            <div class="flex flex-col md:justify-start md:items-start items-center md:text-left text-center">
+              <div class="flex">
+                <h1 class="text-blue-900 font-bold md:text-4xl text-xl">Why Invest?</h1>
+              </div>
+              <div class="flex md:pt-9 pt-2">
+                <h2 class="text-blue-900 text-md md:w-11/12 md:leading-loose">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit .Dolore, itaque labore. Officia neque quidem reiciendis animi commodi Officia neque quidem reiciendis anim
+                </h2>
+              </div>
+              <div class="flex md:pt-9 px-auto py-6 ml-2">
+                <button type="button" class="bg-blue-500 text-white hover:scale-110 hover:shadow-primary duration-300 font-medium ease-out rounded-full md:block md:text-sm text-xs px-5 py-2.5 text-center mr-3 md:mr-0">
+                  Buy Product Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="flex">
+              <div class="flex md:flex-row flex-col md:justify-start justify-center items-center md:items-start md:gap-12 gap-4">
+                <div class="flex my-auto">
+                  <img src="./icon-about-1.png" alt="icon-about" class="md:h-[100px] md:w-[200px] h-[50px] w-[60px] invisible md:visible" />
+                </div>
+                <div class="flex">
+                  <div class="flex flex-col">
+                    <div class="flex">
+                      <h1 class="text-blue-900 py-3 md:text-xl text-lg font-semibold">Sulbot marketplace</h1>
+                    </div>
+                    <div class="flex">
+                      <h1 class="text-blue-900 md:text-lg text-md text-justify md:leading-loose">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quos sapiente perspiciatis nulla corporis</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex pt-6">
+              <div class="flex md:flex-row flex-col md:justify-start justify-center items-center md:items-start md:gap-12 gap-4">
+                <div class="flex my-auto">
+                  <img src="./icon-about-1.png" alt="icon-about" class="md:h-[100px] md:w-[200px] h-[50px] w-[60px] invisible md:visible" />
+                </div>
+                <div class="flex">
+                  <div class="flex flex-col">
+                    <div class="flex">
+                      <h1 class="text-blue-900 py-3 md:text-xl text-lg font-semibold">Sulbot marketplace</h1>
+                    </div>
+                    <div class="flex">
+                      <h1 class="text-blue-900 md:text-lg text-md text-justify md:leading-loose">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quos sapiente perspiciatis nulla corporis</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex pt-6">
+              <div class="flex md:flex-row flex-col md:justify-start justify-center items-center md:items-start md:gap-12 gap-2">
+                <div class="flex md:my-auto">
+                  <img src="./icon-about-1.png" alt="icon-about" class="md:h-[100px] md:w-[200px] h-[50px] w-[60px] invisible md:visible" />
+                </div>
+                <div class="flex">
+                  <div class="flex flex-col">
+                    <div class="flex">
+                      <h1 class="text-blue-900 py-3 md:text-xl text-lg font-semibold">Sulbot marketplace</h1>
+                    </div>
+                    <div class="flex">
+                      <h1 class="text-blue-900 md:text-lg text-md text-justify md:leading-loose">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quos sapiente perspiciatis nulla corporis</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" class="md:visible invisible" d="M0,256L1440,32L1440,320L0,320Z"></path></svg>
+    </div>
+    <!-- Searching -->
+    <section class="max-w-6xl container mx-auto lg:px-0 px-5 md:pb-32">
+      <div class="md:-mt-[300px]">
+        <div class="flex flex-col justify-center items-center py-12 z-10 p-10 bg-white drop-shadow-[0_20px_13px_rgba(0,0,0,0.1)] rounded-md text-blue-800">
+          <div>
+            <h1 class="md:text-3xl text-lg font-bold">Get the latest from SulBot</h1>
+          </div>
+          <div class="py-2">
+            <h2 class="md:text-lg text-md md:text-left text-center">Lorem, ipsum dolor sit amet consectetur</h2>
+          </div>
+          <div class="py-5">
+            <div class="flex md:flex-row flex-col">
+              <div class="flex gap-4">
+                <!--  focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 -->
+                <input
+                  type="search"
+                  class="flex-auto min-w-0 block w-full px-3 py-2 text-base font-normal text-blue-900 bg-white bg-clip-padding border border-solid border-gray-300 rounded-full transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                  placeholder="Search"
+                  aria-label="Search"
+                  aria-describedby="button-addon2"
+                />
+                <!-- <input type="text" class="form-control relative block py-2 px-24  w-full text-blue-900 bg-white rounded-full border border-gray-100 bg-gray-100 focus:text-gray-700" placeholder="Search..." /> -->
+              </div>
+              <div class="flex px-4 justify-center items-center md:pt-0 pt-4">
+                <button
+                  type="button"
+                  class="bg-green-500 text-white hover:scale-110 border hover:bg-green-600 hover:shadow-primary duration-500 font-medium ease-out rounded-full md:block md:text-sm text-xs px-5 py-2.5 sm:text-sm text-center mr-3 md:mr-0"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product -->
+    <section class="max-w-6xl container mx-auto lg:px-0 px-5 py-16">
+      <div class="grid md:grid-cols-2 grid-cols-1 md:gap-x-24">
+        <div class="flex flex-col justify-center items-center">
+          <div class="flex">
+            <img src="./phone.png" alt="image" class="md:h-[558px] md:w-[558px] h-[200px] w-[250px] object-cover" />
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex">
+            <h1 class="text-blue-900 font-bold md:text-4xl text-xl mx-auto md:mx-0">Our Products Are</h1>
+          </div>
+          <div class="flex md:pt-9 pt-5">
+            <h2 class="text-blue-900 text-md md:w-9/12 md:leading-loose md:text-left text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit .Dolore, itaque labore. Officia neque quidem reiciendis animi commodi Officia neque quidem reiciendis anim
+            </h2>
+          </div>
+          <div class="flex md:pt-9 p-2">
+            <h2 class="text-blue-900 text-md md:w-9/12 md:leading-loose md:text-left text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit .Dolore, itaque labore. Officia neque quidem reiciendis animi commodi Officia neque quidem reiciendis anim
+            </h2>
+          </div>
+          <div class="flex md:pt-9 mx-auto md:mx-0 pt-4">
+            <button
+              type="button"
+              class="bg-blue-500 text-white hover:scale-110 border hover:bg-blue-600 hover:shadow-primary duration-500 font-medium ease-out rounded-full md:block md:text-sm text-xs px-5 py-2.5 sm:text-sm text-center mr-3 md:mr-0"
+            >
+              Buy SulBot Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="max-w-6xl container mx-auto lg:px-0 px-5 py-16">
+      <div class="text-center">
+        <h1 class="text-blue-900 font-bold md:text-4xl text-xl mx-auto md:mx-0">The Advisore And The Team</h1>
+        <h2 class="text-blue-900 text-md md:leading-loose text-center py-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit .Dolore, itaque labore.<br />
+          Dolore, itaque labore
+        </h2>
+      </div>
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
+        <div class="bg-white shadow-lg rounded-lg p-9">
+          <div class="flex flex-col justify-center items-center">
+            <div class="flex">
+              <img src="./icon-about-1.png" alt="icon-about-1" class="md:h-[120px] md:w-[150px] h-[70px] w-[90px]" />
+            </div>
+            <div class="flex">
+              <h2 class="text-blue text-md mt-4 font-medium">Machine Learning Algorithm</h2>
+            </div>
+            <div class="flex">
+              <h2 class="text-blue-900 text-center text-xs mt-4 leading-loose">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero fugiat molestiae,Vero fugiat molestiaeVero fugiat molestiae</h2>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-9">
+          <div class="flex flex-col justify-center items-center">
+            <div class="flex">
+              <img src="./icon-about-1.png" alt="icon-about-1" class="md:h-[120px] md:w-[150px] h-[70px] w-[90px]" />
+            </div>
+            <div class="flex">
+              <h2 class="text-blue text-md mt-4 font-medium">Machine Learning Algorithm</h2>
+            </div>
+            <div class="flex">
+              <h2 class="text-blue-900 text-center text-xs mt-4 leading-loose">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero fugiat molestiae,Vero fugiat molestiaeVero fugiat molestiae</h2>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-9">
+          <div class="flex flex-col justify-center items-center">
+            <div class="flex">
+              <img src="./icon-about-1.png" alt="icon-about-1" class="md:h-[120px] md:w-[150px] h-[70px] w-[90px]" />
+            </div>
+            <div class="flex">
+              <h2 class="text-blue text-md mt-4 font-medium">Machine Learning Algorithm</h2>
+            </div>
+            <div class="flex">
+              <h2 class="text-blue-900 text-center text-xs mt-4 leading-loose">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero fugiat molestiae,Vero fugiat molestiaeVero fugiat molestiae</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products 2 -->
+    <section class="max-w-6xl container mx-auto lg:px-0 px-5 md:py-12">
+      <div class="grid md:grid-cols-2 md:gap-x-24 pt-36">
+        <div class="flex flex-col">
+          <div class="flex">
+            <h1 class="text-blue-900 font-bold md:text-4xl text-xl mx-auto md:mx-0">Our Products Are</h1>
+          </div>
+          <div class="flex md:pt-9 pt-5">
+            <h2 class="text-blue-900 text-md md:w-10/12 md:leading-loose md:text-left text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit .Dolore, itaque labore. Officia neque quidem reiciendis animi commodi Officia neque quidem reiciendis anim
+            </h2>
+          </div>
+          <div class="flex md:pt-9 p-2">
+            <h2 class="text-blue-900 text-md md:w-10/12 md:leading-loose md:text-left text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit .Dolore, itaque labore. Officia neque quidem reiciendis animi commodi Officia neque quidem reiciendis anim
+            </h2>
+          </div>
+          <div class="flex md:pt-9 mx-auto md:mx-0">
+            <button
+              type="button"
+              class="bg-blue-500 text-white hover:scale-110 border hover:bg-blue-600 hover:shadow-primary duration-500 font-medium ease-out rounded-full md:block md:text-sm text-xs px-5 py-2.5 sm:text-sm text-center mr-3 md:mr-0"
+            >
+              Buy SulBot Now
+            </button>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-center md:visible invisible">
+          <div class="flex">
+            <img src="./phone.png" alt="image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Channel -->
+    <section class="max-w-6xl container mx-auto lg:px-0 px-5 md:py-16">
+      <div class="text-center">
+        <h1 class="text-blue-900 font-bold md:text-4xl text-xl mx-auto md:mx-0">SulBot Official Communication Channels</h1>
+        <h2 class="text-blue-900 text-md md:leading-loose text-center py-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit .Dolore, itaque labore.<br />
+          Dolore, itaque labore
+        </h2>
+      </div>
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-5 gap-12 pt-24">
+        <div class="bg-white shadow-lg rounded-lg py-4 bg-gray-200 cursor-pointer hover:bg-white hover:scale-[1] duration-300 ease-out hover:shadow-2xl">
+          <div class="flex flex-col justify-center items-center md:-mt-[65px] -mt-[50px]">
+            <div class="flex">
+              <img src="./icon-facebook.png" alt="icon-about-1" class="md:h-[100px] md:w-[100px] h-[70px] w-[70px]" />
+            </div>
+            <div class="flex">
+              <h2 class="text-blue text-md mt-4 font-medium">Our Facebook Account</h2>
+            </div>
+            <div class="flex">
+              <h2 class="text-blue-900 text-center text-xs mt-4 leading-loose">Lorem ipsum dolor sit amet, consectetur</h2>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg py-4 bg-gray-200 cursor-pointer hover:bg-white hover:scale-[1] duration-300 ease-out hover:shadow-2xl">
+          <div class="flex flex-col justify-center items-center md:-mt-[65px] -mt-[50px]">
+            <div class="flex">
+              <img src="./icon-facebook.png" alt="icon-about-1" class="md:h-[100px] md:w-[100px] h-[70px] w-[70px]" />
+            </div>
+            <div class="flex">
+              <h2 class="text-blue text-md mt-4 font-medium">Our Facebook Account</h2>
+            </div>
+            <div class="flex">
+              <h2 class="text-blue-900 text-center text-xs mt-4 leading-loose">Lorem ipsum dolor sit amet, consectetur</h2>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg py-4 bg-gray-200 cursor-pointer hover:bg-white hover:scale-[1] duration-300 ease-out hover:shadow-2xl">
+          <div class="flex flex-col justify-center items-center md:-mt-[65px] -mt-[50px]">
+            <div class="flex">
+              <img src="./icon-facebook.png" alt="icon-about-1" class="md:h-[100px] md:w-[100px] h-[70px] w-[70px]" />
+            </div>
+            <div class="flex">
+              <h2 class="text-blue text-md mt-4 font-medium">Our Facebook Account</h2>
+            </div>
+            <div class="flex">
+              <h2 class="text-blue-900 text-center text-xs mt-4 leading-loose">Lorem ipsum dolor sit amet, consectetur</h2>
+            </div>
+          </div>
+        </div>
+        <div class="pt-12">
+          <div class="bg-white shadow-lg rounded-lg py-4 bg-gray-200 cursor-pointer hover:bg-white hover:scale-[1] duration-300 ease-out hover:shadow-2xl">
+            <div class="flex flex-col justify-center items-center md:-mt-[65px] -mt-[50px]">
+              <div class="flex">
+                <img src="./icon-facebook.png" alt="icon-about-1" class="md:h-[100px] md:w-[100px] h-[70px] w-[70px]" />
+              </div>
+              <div class="flex">
+                <h2 class="text-blue text-md mt-4 font-medium">Our Facebook Account</h2>
+              </div>
+              <div class="flex">
+                <h2 class="text-blue-900 text-center text-xs mt-4 leading-loose">Lorem ipsum dolor sit amet, consectetur</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pt-12">
+          <div class="bg-white shadow-lg rounded-lg py-4 bg-gray-200 cursor-pointer hover:bg-white hover:scale-[1] duration-300 ease-out hover:shadow-2xl">
+            <div class="flex flex-col justify-center items-center md:-mt-[65px] -mt-[50px]">
+              <div class="flex">
+                <img src="./icon-facebook.png" alt="icon-about-1" class="md:h-[100px] md:w-[100px] h-[70px] w-[70px]" />
+              </div>
+              <div class="flex">
+                <h2 class="text-blue text-md mt-4 font-medium">Our Facebook Account</h2>
+              </div>
+              <div class="flex">
+                <h2 class="text-blue-900 text-center text-xs mt-4 leading-loose">Lorem ipsum dolor sit amet, consectetur</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pt-12">
+          <div class="bg-white shadow-lg rounded-lg py-4 bg-gray-200 cursor-pointer hover:bg-white hover:scale-[1] duration-300 ease-out hover:shadow-2xl">
+            <div class="flex flex-col justify-center items-center md:-mt-[65px] -mt-[50px]">
+              <div class="flex">
+                <img src="./icon-facebook.png" alt="icon-about-1" class="md:h-[100px] md:w-[100px] h-[70px] w-[70px]" />
+              </div>
+              <div class="flex">
+                <h2 class="text-blue text-md mt-4 font-medium">Our Facebook Account</h2>
+              </div>
+              <div class="flex">
+                <h2 class="text-blue-900 text-center text-xs mt-4 leading-loose">Lorem ipsum dolor sit amet, consectetur</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Last Section -->
+    <div class="py-2"></div>
+    <div class="bg-blue-500 md:py-0 md:px-0 px-5 py-5">
+      <section class="max-w-6xl container mx-auto lg:px-0 px-5 md:pt-16 pt-6">
+        <div class="flex flex-col justify-center items-center py-12 p-10 bg-white shadow-xl rounded-md text-blue-800">
+          <div>
+            <h1 class="md:text-3xl text-lg font-bold">Ready to get started?</h1>
+          </div>
+          <div class="py-2">
+            <h2 class="md:text-lg text-md">Lorem, ipsum dolor sit amet consectetur</h2>
+          </div>
+          <div class="py-5">
+            <div class="flex md:flex-row flex-col gap-2">
+              <div class="flex px-4 md:pt-0">
+                <button
+                  type="button"
+                  class="bg-green-500 text-white hover:scale-110 border hover:bg-green-600 hover:shadow-primary duration-500 font-medium ease-out rounded-full md:block md:text-sm text-xs px-5 py-2.5 sm:text-sm text-center mr-3 md:mr-0"
+                >
+                  Join With Us
+                </button>
+              </div>
+              <div class="flex px-4">
+                <button
+                  type="button"
+                  class="bg-blue-500 text-white hover:scale-110 border hover:bg-blue-600 hover:shadow-primary duration-500 font-medium ease-out rounded-full md:block md:text-sm text-xs px-5 py-2.5 sm:text-sm text-center mr-3 md:mr-0"
+                >
+                  Join With Us
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="max-w-6xl container mx-auto lg:px-0 px-5 md:pt-16 md:pb-12 pt-6">
+        <h1 class="text-center md:text-3xl text-xl font-bold text-white">SulBot</h1>
+        <div class="flex flex-row justify-center items-center pt-6">
+          <div class="flex md:gap-16 gap-4">
+            <a class="cursor-pointer text-white md:text-lg text-sm text-semibold text-opacity-70 hover:text-opacity-100">About</a>
+            <a class="cursor-pointer text-white md:text-lg text-sm text-semibold text-opacity-70 hover:text-opacity-100">Benefit</a>
+            <a class="cursor-pointer text-white md:text-lg text-sm text-semibold text-opacity-70 hover:text-opacity-100">Products</a>
+            <a class="cursor-pointer text-white md:text-lg text-sm text-semibold text-opacity-70 hover:text-opacity-100">Teams</a>
+            <a class="cursor-pointer text-white md:text-lg text-sm text-semibold text-opacity-70 hover:text-opacity-100">FAQ</a>
+          </div>
+        </div>
+
+        <div class="flex flex-row justify-around items-center pt-6">
+          <div class="flex md:gap-4 gap-1">
+            <h1 class="text-opacity-80 text-white font-normal md:text-md text-[0.5rem] md:ml-0 ml-4">&copy; 2022 SulBot</h1>
+            <div class="flex flex-row justify-center items-center">
+              <div class="flex md:gap-4 gap-2 invisible md:visible md:ml-14">
+                <i class="fa-brands fa-github text-white text-center"></i>
+                <i class="fa-brands fa-github text-white text-center"></i>
+                <i class="fa-brands fa-github text-white text-center"></i>
+              </div>
+            </div>
+            <h1 class="text-opacity-80 text-white font-normal md:text-md text-[0.5rem] md:left-12 relative" href="mailto:ptsulbot@sulbot.com">ptsulbot@sulbot.com</h1>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            },
+            dropShadow: {
+              primary: '0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1)',
+            },
+            lineHeight: {
+              'extra-loose': '2.5',
+              12: '3rem',
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+  </body>
+</html>
